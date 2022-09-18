@@ -524,7 +524,7 @@ line-height: 18px;
 	overflow-y: auto;
 scroll-snap-type: mandatory;
 justify-content: start;
-
+margin-top:20px;
 }
 .rightbox__content__left__bottombox__title
 {
