@@ -1,0 +1,80 @@
+.circle{
+	width: 130px;
+	height: 130px;
+	margin-bottom: 120px;
+	border-radius: 50%;
+border: solid 10px rgba(255, 255, 255, .1);
+border-top: solid 10px rgb(0, 4, 255);
+animation: animate 2s infinite linear;
+z-index: 3;
+}
+
+@keyframes animate {
+	0%{
+		transform: translate(-20%, 50%) rotate(0deg);
+	}
+	100%{
+		transform: translate(-20%, 50%) rotate(360deg);
+	}
+}
+.leftbox{
+	display: flex;
+	flex-direction: column;
+}
+
+.front__wall{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 5;
+	background-color: rgba(92, 83, 83, 0.678);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.send__mes{
+	opacity: 0;
+	visibility: hidden;
+	display: none;
+	width: 300px;
+	height: 200px;
+	background-color: aliceblue;
+	flex-direction: column;
+border-radius: 20%;
+animation-name: sendMess;
+animation-duration: 1s;
+box-shadow: darkgray 0px 4px 9px;
+}
+
+@keyframes sendMess{
+	0%{
+		margin-bottom: 200px;
+		transform: rotateX(80deg)
+	}100%{
+		margin-bottom: 0px;
+
+	}
+}
+
+.send__mes span{
+	font-size: 30px;
+	color: black;
+	margin-top: 30px;
+	margin-left: 10px;
+}
+
+.backFromMessage{
+	width: 60px;
+	height: 40px;
+	background-color: blue;
+	color: aliceblue;
+	font-size: 20px;
+	border-radius: 20%;
+	margin-top: 45px;
+	margin-left: 220px;
+}
+.backFromMessage:hover{
+	width: 58px;
+	height: 38px;
+	transition: 0.2s;
+}

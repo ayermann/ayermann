@@ -1,0 +1,21 @@
+.main__tree{
+width: 100%;
+height: 80%;
+	background-image: url(../images/mainTree.png);
+	background-size: 100% 100%;
+	margin-top: 20px;
+}
+.tree{
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+.charm1, .charm2, .charm3, .charm4, .charm5{
+	width:64px;
+	height: 64px;
+	background-image: url(../images/ch1.png);
+}
+.tree__items{
+	display: flex;
+	flex-wrap: wrap;
+}
